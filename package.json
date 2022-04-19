@@ -1,0 +1,25 @@
+{
+    "name": "coe-theme",
+    "displayName": "COE Theme",
+    "description": "",
+    "version": "0.0.1",
+    "engines": {
+        "vscode": "^1.65.0"
+    },
+    "categories": [
+        "Themes"
+    ],
+    "contributes": {
+        "themes": [
+            {
+                "label": "COE Dark",
+                "uiTheme": "vs-dark",
+                "path": "./themes/COE Dark-color-theme.json"
+            }
+        ]
+    },
+    "dependencies": {
+        "vscode-oniguruma": "^1.6.2",
+        "vscode-textmate": "^6.0.0"
+    }
+}

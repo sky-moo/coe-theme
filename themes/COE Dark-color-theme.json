@@ -1,0 +1,292 @@
+{
+    "name": "COE Dark",
+    "type": "dark",
+    "colors": { "editor.foreground": "#888", "editor.background": "#222" },
+    "tokenColors": [
+        // Language Settings
+        // css
+        {
+            "name": "CSS Class",
+            "scope": ["entity.other.attribute-name.class"],
+            "settings": { "foreground": "#ff0" }
+        },
+        {
+            "name": "CSS Id",
+            "scope": ["entity.other.attribute-name.id"],
+            "settings": { "foreground": "#fa0" }
+        },
+        {
+            "name": "CSS Pseudo Class",
+            "scope": ["entity.other.attribute-name.pseudo-class"],
+            "settings": { "foreground": "#f69" }
+        },
+        {
+            "name": "CSS Pseudo Element",
+            "scope": ["entity.other.attribute-name.pseudo-element"],
+            "settings": { "foreground": "#f6f" }
+        },
+        // md
+        {
+            "scope": ["markup.bold", "markup.heading"],
+            "settings": {
+                "fontStyle": "bold"
+            }
+        },
+        {
+            "scope": "markup.italic",
+            "settings": {
+                "fontStyle": "italic"
+            }
+        },
+        {
+            "scope": [
+                "punctuation.definition.markdown",
+                "punctuation.definition.bold",
+                "punctuation.definition.constant",
+                "punctuation.definition.heading",
+                "punctuation.definition.italic",
+                "punctuation.definition.link",
+                "punctuation.definition.list",
+                "punctuation.definition.metadata",
+                "punctuation.definition.quote",
+                "punctuation.definition.math",
+                "meta.separator.markdown",
+                "markup.heading.setext"
+            ],
+            "settings": {
+                "foreground": "#f50"
+            }
+        },
+        // RegExp Start
+        {
+            "name": "RegExp Punctuation, RegExp Operator Keyword",
+            "scope": [
+                "string.regexp punctuation",
+                "string.regexp keyword.operator" // js
+            ],
+            "settings": {
+                "foreground": "#c40"
+            }
+        },
+        {
+            "name": "RegExp Escape Character, RegExp Character Class",
+            "scope": [
+                "constant.character.escape.backslash.regexp", // js
+                "constant.other.character-class.regexp", // js
+                "constant.other.character-class.range.regexp", // js
+                "constant.character.escape.regexp", // py: EscapeCharacter
+                "support.other.match.any.regexp" // py: CharacterClass
+            ],
+            "settings": {
+                "foreground": "#cc0"
+            }
+        },
+        {
+            "name": "RegExp Flag, RegExp Anchor, RegExp Reference, RegExp Name",
+            "scope": [
+                "string.regexp keyword.other", // js
+                "keyword.control.anchor.regexp", // js
+                "keyword.other.back-reference.regexp", // js
+                "variable.other.regexp", // js
+                "support.other.match.begin.regexp", // py: Anchor
+                "support.other.match.end.regexp", // py: Anchor
+                "support.other.escape.special.regexp", // py: Anchor, SpecialEscapeCharacter
+                "entity.name.tag.backreference.regexp" // py: Reference
+            ],
+            "settings": {
+                "foreground": "#08c"
+            }
+        },
+        // RegExp End
+        {
+            "name": "Default",
+            "scope": [
+                "punctuation.definition.tag" // html(3), js(3), md(2), xml(1)
+            ],
+            "settings": {
+                "foreground": "#888"
+            }
+        },
+        {
+            "name": "Variable, Property",
+            "scope": [
+                "variable",
+                "entity.name.function.namespace-prefix", // css(1)
+                "entity.other.namespace-prefix", // css(1)
+                "meta.property-value.css", // css(1)
+                "text.html.derivative", // html(root)
+                "text.html.markdown", // md(root)
+                "text.xml", // xml(root)
+                "meta.internalsubset" // xml(1)
+            ],
+            "settings": { "foreground": "#bbb" }
+        },
+        {
+            "name": "Python Comment Tag",
+            "scope": [
+                "keyword.codetag" // py(1)
+            ],
+            "settings": {
+                "fontStyle": "bold"
+            }
+        },
+        {
+            "name": "Invalid, Deprecated, Illegal, Unrecognized, Unknown",
+            "scope": [
+                "invalid", // invalid.deprecated, invalid.illegal
+                "keyword.illegal", // py(1)
+                "meta.declaration.type.alias.value.unknown", // cpp(1)
+                "meta.function.gradient.invalid", // css(1)
+                "meta.attribute.unrecognized", // html(1)
+                "meta.tag.other.unrecognized", // html(1)
+                "source.unknown" // html(1)
+            ],
+            "settings": { "foreground": "#f00", "fontStyle": "underline" }
+        },
+        {
+            "name": "Name Tag",
+            "scope": [
+                "entity.name.tag",
+                "keyword.other.doctype", // xml(1)
+                "keyword.other.entity", // xml(1)
+                "keyword.other.entitytype" // xml(1)
+            ],
+            "settings": { "foreground": "#f50" }
+        },
+        {
+            "name": "String, Hex Color, URL",
+            "scope": [
+                "string",
+                "punctuation.definition.string",
+                "markup.inline.raw.string", // c(1), cpp(1), md(1)
+                "constant.other.color", // css(1)
+                "variable.parameter.url", // css(1)
+                "markup.underline.link" // md(2)
+            ],
+            "settings": { "foreground": "#c80" }
+        },
+        {
+            "name": "Function Name",
+            "scope": [
+                "entity.name.function",
+                "support.function" // css(8), py(2)
+            ],
+            "settings": { "foreground": "#fd3" }
+        },
+        {
+            "name": "Character Constant",
+            "scope": [
+                "constant.character.escape",
+                "constant.character.entity", // html(3), js(1), xml(1)
+                "constant.other.unicode-range", // css(1)
+                "constant.character.parameter-entity", // xml(1)
+                "variable.language.entity" // xml(1)
+            ],
+            "settings": { "foreground": "#cc0" }
+        },
+        {
+            "name": "Block Comment",
+            "scope": ["comment.block"],
+            "settings": { "foreground": "#8c0" }
+        },
+        {
+            "name": "Line Comment",
+            "scope": [
+                "comment.line",
+                "comment.regexp", // py, js
+                "comment.typehint" // py(5)
+            ],
+            "settings": { "foreground": "#4c0" }
+        },
+        {
+            "name": "Numeric",
+            "scope": ["constant.numeric"],
+            "settings": { "foreground": "#0c8" }
+        },
+        {
+            "scope": [
+                "entity.other.attribute-name",
+                "meta.property-name.css", // css(1)
+                "support.type.property-name", // css(2), json(3)
+                "support.type.vendored", // css(2)
+                "support.variable.property", // js(3)
+                "variable.other.property", // cpp(1), js(1)
+                "variable.other.object.property" // cpp(1), java(1), js(1)
+            ],
+            "settings": { "foreground": "#0ac" }
+        },
+        {
+            "name": "Type, Modifier",
+            "scope": [
+                "storage.type",
+                "storage.modifier",
+                "support.type",
+                "fenced_code.block.language.markdown" // md(1)
+            ],
+            "settings": { "foreground": "#39f" }
+        },
+        {
+            "name": "Unit Keyword",
+            "scope": [
+                "keyword.other.unit" // c(7), cpp(8), css(2)
+            ],
+            "settings": { "foreground": "#d9f" }
+        },
+        {
+            "name": "Language Constant",
+            "scope": [
+                "constant.language",
+                "support.constant",
+                "entity.other.keyframe-offset" // css(2)
+            ],
+            "settings": { "foreground": "#c0a" }
+        },
+        {
+            "name": "Operator Keyword",
+            "scope": ["keyword.operator"],
+            "settings": { "foreground": "#f9b" }
+        },
+        {
+            "name": "Control Keyword, Keyword:important",
+            "scope": [
+                "keyword.control",
+                "keyword.other.important" // css(1)
+            ],
+            "settings": { "foreground": "#f37" }
+        }
+    ],
+    "semanticHighlighting": true,
+    "semanticTokenColors": {
+        "class": {
+            "foreground": "#3f9"
+        },
+        "type": {
+            "foreground": "#3f9"
+        },
+        "variable": {
+            "foreground": "#b9f"
+        },
+        "variable.local": {
+            "foreground": "#ca0"
+        },
+        "variable.readonly": {
+            "fontStyle": "bold"
+        },
+        "parameter": {
+            "foreground": "#ca0",
+            "fontStyle": "underline"
+        },
+        "function": {
+            "foreground": "#fd3"
+        },
+        "property": {
+            "foreground": "#0ac"
+        },
+        "property.readonly": {
+            "fontStyle": "bold"
+        },
+        "method": {
+            "foreground": "#3df"
+        }
+    }
+}
