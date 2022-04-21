@@ -1,8 +1,9 @@
 {
     "name": "coe-theme",
     "displayName": "COE Theme",
-    "description": "",
-    "version": "0.0.1",
+    "version": "0.1.0",
+    "publisher": "CuOFe",
+    "description": "A simple color theme with semantic highlighting.",
     "engines": {
         "vscode": "^1.65.0"
     },
@@ -21,5 +22,9 @@
     "dependencies": {
         "vscode-oniguruma": "^1.6.2",
         "vscode-textmate": "^6.0.0"
+    },
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/sky-moo/coe-theme.git"
     }
 }
